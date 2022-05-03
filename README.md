@@ -1,1 +1,4 @@
-# nogto-nvim-theme
+# nogto-nvim-theme 
+
+- javascript 
+![](color.jpg)
