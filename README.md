@@ -1,0 +1,1 @@
+# nogto-nvim-theme
