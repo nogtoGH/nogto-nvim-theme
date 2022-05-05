@@ -1,13 +1,13 @@
-"-------------------------------------------------------------------------------
+"------------------------------------------------------------------------------
 "
 "     File Name           :     otgon.vim
 "     Created By          :     otgon
 "     Creation Date       :     [2021-10-20 21:31]
-"     Last Modified       :
+"     Last Modified       :     [2022-05-05 17:05]
 "     Description         :     nogto color v1
 "--------------------------------------------------------------------------------
 let s:mainbg='#000000'
-let s:black = '#121212'
+let s:black = '#303030'
 let s:mainfg ='#191919'
 let s:khaki='#f4d67e'
 let s:yellow='#e3c78a'
@@ -68,7 +68,7 @@ exe "hi Macro guifg="s:mainfg
 " constant
 exe "hi Constant guifg=" s:greenblue  
 exe "hi String guifg=" s:line  
-exe "hi Comment  guifg="s:black  
+exe "hi Comment  guifg="s:black   
 exe "hi Character  guifg="s:sky  
 exe "hi Number guifg=" s:mainfg   
 exe "hi Boolean   guifg="s:khaki    
@@ -93,7 +93,7 @@ exe "hi Structure  guifg="s:green
 exe "hi Type guifg="s:orange 
 " Special
 exe "hi Special guifg="s:line   
-exe "hi SpecialComment  guifg=" s:crimson 
+exe "hi SpecialComment  guifg=" s:black  
 exe "hi Tag  guifg=" s:greenblue 
 " error
 exe "hi Error guibg="s:orange  
@@ -120,7 +120,7 @@ exe "hi DiffText guifg="s:white "guibg="s:mainbg
 exe "hi TSAttribute guifg="s:blue  
 exe "hi TSBoolean guifg="s:green 
 exe "hi TSCharacter guifg="s:line   
-exe "hi TSComment guifg=" s:black  
+exe "hi TSComment guifg=" s:black    
 exe "hi TSConditional guifg="s:yellow 
 exe "hi TSConstant guifg="s:greenblue 
 exe "hi TSConstBuiltin guifg="s:spring 
@@ -129,10 +129,10 @@ exe "hi TSConstructor guifg="s:blue
 exe "hi TSException guifg="s:purple 
 exe "hi TSField guifg="s:color 
 exe "hi TSFloat guifg="s:white   
-exe "hi TSFunction guifg="s:spring     
+exe "hi TSFunction guifg="s:spring       
 exe "hi TSFuncBuiltin guifg="s:red  
 exe "hi TSFuncMacro guifg="s:greenblue  
-exe "hi TSInclude guifg="s:spring 
+exe "hi TSInclude guifg="s:color   
 exe "hi TSKeyword guifg="s:violet  
 exe "hi TSKeywordFunction guifg="s:color   
 exe "hi TsKeywordOperator guifg="s:greenblue 
