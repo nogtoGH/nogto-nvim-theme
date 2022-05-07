@@ -9,22 +9,32 @@
 let s:mainbg='#000000'
 let s:black = '#303030'
 let s:mainfg ='#191919'
-let s:khaki='#f4d67e'
 let s:yellow='#e3c78a'
-let s:orange='#de935f' 
+let s:orange='#de935f'
+let s:orange2  = '#f39c91'
+let s:red1  = '#f5a3c2'
+let s:red2 = '#f17eaa'
 let s:coral='#f09479'
+let s:red3 = '#e97263'
 let s:crimson='#ff5189'
 let s:red='#ff5454'
 let s:greenblue='#87dfaf'
 let s:line='#85dc85'
 let s:green='#8cc85f'
 let s:spring='#00875f'
+let s:darkgreen = '#35ba21'
 let s:sky='#74b2ff'
 let s:blue='#67cbe7'
+let s:blue2=  '#7ddce8'
+let s:blue3= '#3ccadd'
+let s:darkblue = '#22acbf'
 let s:purple='#ae81ff'
 let s:violet='#d183e8'
 let s:color ='#dfafaf' 
 let s:white ='#b3b9b8'
+let s:white = '#d1c7cb'
+let s:white1 = '#ffe8e6'
+"add 
 set background=dark
 if version > 1
     hi clear
@@ -71,32 +81,32 @@ exe "hi String guifg=" s:line
 exe "hi Comment  guifg="s:black   
 exe "hi Character  guifg="s:sky  
 exe "hi Number guifg=" s:mainfg   
-exe "hi Boolean   guifg="s:khaki    
+exe "hi Boolean   guifg="s:yellow     
 exe "hi Float  guifg="s:yellow  
 " identifier
-exe "hi Identifier guifg="s:violet     
-exe "hi Function  guifg="s:spring   
+exe "hi Identifier guifg="s:red1        
+exe "hi Function  guifg="s:red3 
 "statement 
-exe "hi Statement  guifg="s:coral   
-exe "hi Conditional guifg="s:crimson  
+exe "hi Statement  guifg="s:red3    
+exe "hi Conditional guifg="s:darkblue   
 exe "hi Repeat  guifg=" s:greenblue 
-exe "hi Label guifg=" s:color 
+exe "hi Label guifg=" s:orange2   
 exe "hi Operator guifg="s:white 
-exe "hi Keyword  guifg="s:red  
+exe "hi Keyword  guifg="s:red2   
 " PreProc
 exe "hi Define guifg="s:purple 
-exe "hi PreCondit  guifg=" s:red  
-exe "hi PreProc  guifg=" s:spring 
+exe "hi PreCondit  guifg=" s:darkblue   
+exe "hi PreProc  guifg=" s:blue3  
 " type
 exe "hi StorageClass guifg=" s:violet   
 exe "hi Structure  guifg="s:green 
 exe "hi Type guifg="s:orange 
 " Special
-exe "hi Special guifg="s:line   
+exe "hi Special guifg="s:darkblue    
 exe "hi SpecialComment  guifg=" s:black  
 exe "hi Tag  guifg=" s:greenblue 
 " error
-exe "hi Error guibg="s:orange  
+exe "hi Error guifg="s:mainbg "guibg="s:sky   
 "others
 exe "hi foldcolumn guibg="s:mainfg  
 exe "hi VertSplit guibg="s:mainfg  
@@ -121,7 +131,7 @@ exe "hi TSAttribute guifg="s:blue
 exe "hi TSBoolean guifg="s:green 
 exe "hi TSCharacter guifg="s:line   
 exe "hi TSComment guifg=" s:black    
-exe "hi TSConditional guifg="s:yellow 
+exe "hi TSConditional guifg="s:darkblue  
 exe "hi TSConstant guifg="s:greenblue 
 exe "hi TSConstBuiltin guifg="s:spring 
 exe "hi TSConstMacro guifg="s:green 
@@ -133,11 +143,11 @@ exe "hi TSFunction guifg="s:spring
 exe "hi TSFuncBuiltin guifg="s:red  
 exe "hi TSFuncMacro guifg="s:greenblue  
 exe "hi TSInclude guifg="s:color   
-exe "hi TSKeyword guifg="s:violet  
+exe "hi TSKeyword guifg="s:red2   
 exe "hi TSKeywordFunction guifg="s:color   
 exe "hi TsKeywordOperator guifg="s:greenblue 
 exe "hi TSKeywordReturn guifg="s:line  
-exe "hi TSLabel guifg="s:green 
+exe "hi TSLabel guifg="s:orange2   
 exe "hi TSMethod guifg="s:coral  
 exe "hi TSNamespace guifg="s:sky    
 exe "hi TSNumber guifg="s:white 
@@ -147,7 +157,7 @@ exe "hi TSProperty guifg="s:crimson
 exe "hi TSPunctDelimiter guifg="s:line  
 exe "hi TSPunctBracket guifg="s:sky 
 exe "hi TSPunctSpecial guifg="s:spring 
-exe "hi TSRepeat guifg=" s:violet 
+exe "hi TSRepeat guifg=" s:greenblue  
 exe "hi TSString guifg="s:greenblue 
 exe "hi TSStringRegex guifg=" s:green  
 exe "hi TSStringEscape guifg="s:white  
@@ -157,7 +167,7 @@ exe "hi TSTag guifg="s:crimson
 exe "hi TSTagAttribute guifg="s:purple 
 exe "hi TSTagDelimiter guifg="s:spring 
 exe "hi TSText guifg="s:green 
-exe "hi TSStrong guifg="s:khaki  
+exe "hi TSStrong guifg="s:yellow  
 exe "hi TSEmphasis gui=italic"
 exe "hi TSUnderline guifg="s:yellow   
 exe "hi TSStrike guifg="s:sky 
@@ -166,15 +176,15 @@ exe "hi TSLiteral guifg="s:color
 exe "hi TSURI guifg="s:red 
 exe "hi TSMath guifg="s:sky  
 exe "hi TSTextReference guifg="s:white  
-exe "hi TSEnvirontment guifg="s:khaki 
+exe "hi TSEnvirontment guifg="s:sky
 exe "hi TSEnvironmentName guifg="s:color  
 exe "hi TSNote guifg="s:crimson 
 exe "hi TSWarning guifg="s:orange "guibg="s:orange  
 exe "hi TSDanger guifg="s:crimson  
 exe "hi TSType guifg="s:purple  
 exe "hi TSTypeBuiltin guifg="s:greenblue  
-exe "hi TSVariable guifg="s:red 
-exe "hi TSVariableBuiltin guifg="s:crimson 
+exe "hi TSVariable guifg="s:red1    
+exe "hi TSVariableBuiltin guifg="s:red2  
 " NvimTree Highlights
 exe "hi NvimTreeFolderIcon guifg="s:black 
 exe "hi NvimTreeFoldername guifg="s:white 
