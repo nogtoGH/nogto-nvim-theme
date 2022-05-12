@@ -32,8 +32,8 @@ let s:purple='#ae81ff'
 let s:violet='#d183e8'
 let s:color ='#dfafaf' 
 let s:white ='#b3b9b8'
-let s:white = '#d1c7cb'
-let s:white1 = '#ffe8e6'
+let s:white1 = '#d1c7cb'
+let s:white2 = '#ffe8e6'
 "add 
 set background=dark
 if version > 1
@@ -80,7 +80,7 @@ exe "hi Constant guifg=" s:greenblue
 exe "hi String guifg=" s:line  
 exe "hi Comment  guifg="s:black   
 exe "hi Character  guifg="s:sky  
-exe "hi Number guifg=" s:mainfg   
+exe "hi Number guifg=" s:white1    
 exe "hi Boolean   guifg="s:yellow     
 exe "hi Float  guifg="s:yellow  
 " identifier
@@ -109,7 +109,7 @@ exe "hi Tag  guifg=" s:greenblue
 exe "hi Error guifg="s:mainbg "guibg="s:sky   
 "others
 exe "hi foldcolumn guibg="s:mainfg  
-exe "hi VertSplit guibg="s:mainfg  
+exe "hi VertSplit guibg="s:black   
 exe "hi ColorColumn guibg=" s:mainfg   
 exe "hi MatchParen guifg="s:mainfg  
 exe "hi Directory   guifg=" s:mainfg    
@@ -150,7 +150,7 @@ exe "hi TSKeywordReturn guifg="s:line
 exe "hi TSLabel guifg="s:orange2   
 exe "hi TSMethod guifg="s:coral  
 exe "hi TSNamespace guifg="s:sky    
-exe "hi TSNumber guifg="s:white 
+exe "hi TSNumber guifg="s:white1  
 exe "hi TSParameter guifg="s:purple   
 exe "hi TSParameterReference guifg="s:spring 
 exe "hi TSProperty guifg="s:crimson 
@@ -169,7 +169,7 @@ exe "hi TSTagDelimiter guifg="s:spring
 exe "hi TSText guifg="s:green 
 exe "hi TSStrong guifg="s:yellow  
 exe "hi TSEmphasis gui=italic"
-exe "hi TSUnderline guifg="s:yellow   
+exe "hi TSUnderline guifg="s:black   
 exe "hi TSStrike guifg="s:sky 
 exe "hi TSTitle guifg="s:green  
 exe "hi TSLiteral guifg="s:color  
