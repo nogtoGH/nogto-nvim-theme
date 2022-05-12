@@ -2,4 +2,4 @@
 
 - javascript 
 
-![](color.jpg)
+![](screenshot.jpg)
